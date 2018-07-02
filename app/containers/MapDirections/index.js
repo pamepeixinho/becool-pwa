@@ -3,13 +3,14 @@ import React from 'react';
 import { compose } from 'recompose';
 import { geolocated } from 'react-geolocated';
 import styled from 'styled-components';
+
 import MuiButton from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
+import from '@material-ui/core/CircularProgress';
+import DirectionsBike from '@material-ui/icons/DirectionsBike';
 
 import GoogleMap from './GoogleMap';
 import { getParameterByName } from '../../api/request';
-import { CircularProgress } from 'material-ui';
-import { DirectionsBike } from 'material-ui-icons';
 
 const Cardzinho = styled.div`
   height: 170px;

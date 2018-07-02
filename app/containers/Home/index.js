@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import MuiButton from '@material-ui/core/Button';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import DirectionsBike from '@material-ui/icons/DirectionsBike';
 
 import Title from '../../components/Title';
 import Wrapper from '../../components/Wrapper';
 import SearchBox from '../../components/SearchBox';
-import TextField from '@material-ui/core/TextField';
-import { MuiThemeProvider } from 'material-ui';
 import Light from '../../theme/Light';
-import { DirectionsBike } from 'material-ui-icons';
 
 const ButtonsWrapper = styled.div`
   display: flex;

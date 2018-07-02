@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" />
   <head>
     <!-- The first thing in any HTML file should be the charset -->
     <meta charset="utf-8">
@@ -8,8 +9,16 @@
     <!-- Allow installing the app to the homescreen -->
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>React.js Boilerplate</title>
+
+    <title>BeCool</title>
     <noscript id="jss-insertion-point"></noscript>
+    <style type="text/css">
+      @keyframes fadeAnimation {
+       0%   { opacity: 1; }
+       50%  { opacity: 0.85; }
+       100% { opacity: 1; }
+     }
+   </style>
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->
@@ -18,5 +27,10 @@
     <!-- The app hooks into this div -->
     <div id="app"></div>
     <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
+    <div style="background: linear-gradient(180deg, #5E0D62 0%, #281029 100%) no-repeat center; position: absolute; z-index: 100; padding: 0; margin: 0; height: 100%; width: 100%; animation: fadeAnimation 1.5s infinite;">
+      <div style="position: absolute; top: 50%; margin-top: -54px; left: 30%; margin-left: -56.5px; text-align: center">
+        <img src="./images/logo.png" />
+      </div>
+    </div>
   </body>
 </html>

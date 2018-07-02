@@ -41,4 +41,25 @@ export const buildBody = (method, body, extraHeaders, extraOptions) => ({
   ...extraOptions,
 });
 
+export const getParameterByName = (name, url) => {
+  let finalUrl;
+  if (!url) {
+    finalUrl = window.location.href;
+  }
+
+  const cleanedName = name.replace(/[\[\]]/g, "\\$&");
+  const regex = new RegExp("[?&]" + cleanedName + "(=([^&#]*)|&|#|$)");
+  const results = regex.exec(finalUrl);
+
+  if (!results) {
+    return null;
+  }
+
+  if (!results[2]) {
+    return '';
+  }
+
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 export default Request;

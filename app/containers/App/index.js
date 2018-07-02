@@ -5,16 +5,16 @@ import styled from 'styled-components';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Logo from '../src/images/logo_app.png';
-import MapDirections from './containers/MapDirections';
-import Home from './containers/Home';
-import GetBike from './containers/GetBike';
-import Summary from './containers/Summary';
-import CarbonCoins from './containers/CarbonCoins';
-import CarbonCoinsMine from './containers/CarbonCoins/Me';
-import theme from './theme/purple';
-import Rewards from "./containers/Rewards";
+import MapDirections from '../MapDirections';
+import Home from '../Home';
+import GetBike from '../GetBike';
+import Summary from '../Summary';
+import CarbonCoins from '../CarbonCoins';
+import CarbonCoinsMine from '../CarbonCoins/Me';
+import theme from './assets/theme/DefaultTheme';
+import Rewards from "../Rewards";
 // import BurguerMenu from './components/BurguerMenu';
-// import Rewards from "./containers/Rewards";
+// import Rewards from "../Rewards";
 import BurguerMenu from './components/BurguerMenu'
 
 const Router = styled(BrowserRouter)`

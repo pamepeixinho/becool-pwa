@@ -9,22 +9,27 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
   }
 
   #app {
-    background-color: #fafafa;
+    background: linear-gradient(180deg, #5E0D62 0%, #281029 100%) no-repeat;
+    color: white !important;
     min-height: 100%;
     min-width: 100%;
   }
 
+  input {
+    color: white !important;
+  }
+
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Nunito', Helvetica, Arial, sans-serif;
     line-height: 1.5em;
   }
 `;

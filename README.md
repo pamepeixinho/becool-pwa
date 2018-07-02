@@ -26,3 +26,17 @@ npm install;
 npm run build:dll;
 npm start;
 ```
+
+## Tips & Tricks
+
+### Eslint
+
+#### Auto fixable problems can be solved with
+
+```shell
+npm run lint:eslint -- . --fix
+```
+
+#### VSCode extension
+
+Install eslint extension for vscode and get highlights and auto fix in IDE
